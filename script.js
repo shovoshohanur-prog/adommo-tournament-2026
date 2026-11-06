@@ -213,7 +213,7 @@ home: {
       <div class="teachers-grid">
 
         <div class="teacher-card">
-          <img src="teacher1.jpg" alt="Ashfaq Ahmed">
+          <img src="teacher1.png" alt="Ashfaq Ahmed">
           <div class="teacher-info">
             <h2>Ashfaq Ahmed</h2>
             <p><strong>University:</strong> CUET</p>
