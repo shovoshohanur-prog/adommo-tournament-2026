@@ -1497,3 +1497,111 @@ body {
     font-size: 17px;
   }
 }
+/* ADOMMO TEACHERS SECTION */
+
+.teachers-page {
+  padding: 25px 10px;
+}
+
+.teachers-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.teachers-heading h1 {
+  color: #123c75;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.teachers-heading p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.teacher-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 40, 90, 0.10);
+  border: 1px solid #e5edf7;
+  transition: 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 40, 90, 0.16);
+}
+
+.teacher-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  background: #eaf1fa;
+}
+
+.teacher-info {
+  padding: 18px;
+}
+
+.teacher-info h2 {
+  color: #123c75;
+  font-size: 19px;
+  margin-bottom: 13px;
+}
+
+.teacher-info p {
+  color: #475569;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.teacher-info strong {
+  color: #123c75;
+}
+
+.teacher-subject {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 15px;
+}
+
+.teacher-subject span {
+  background: #e8f1ff;
+  color: #1453a0;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .teachers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 550px) {
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-card img {
+    height: 260px;
+  }
+
+  .teachers-heading h1 {
+    font-size: 26px;
+  }
+}

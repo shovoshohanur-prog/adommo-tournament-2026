@@ -201,12 +201,83 @@ home: {
   `
 },
   teachers: {
-    title: "Adommo Teachers",
-    content: `
-      <h1>Adommo Teachers</h1>
-      <p>Teachers information will appear here.</p>
-    `
-  },
+  title: "Adommo Teachers",
+  content: `
+    <div class="teachers-page">
+
+      <div class="teachers-heading">
+        <h1>Meet Our Teachers</h1>
+        <p>Learn from the best minds of Adommo</p>
+      </div>
+
+      <div class="teachers-grid">
+
+        <div class="teacher-card">
+          <img src="Photo/teacher1.jpg" alt="Ashfaq Ahmed">
+          <div class="teacher-info">
+            <h2>Ashfaq Ahmed</h2>
+            <p><strong>University:</strong> CUET</p>
+            <p><strong>Department:</strong> ME</p>
+            <div class="teacher-subject">
+              <span>Physics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <img src="Photo/teacher2.jpg" alt="Rabiul Islam Pulock">
+          <div class="teacher-info">
+            <h2>Rabiul Islam Pulock</h2>
+            <p><strong>University:</strong> CU</p>
+            <p><strong>Department:</strong> Pharmacy</p>
+            <div class="teacher-subject">
+              <span>Chemistry</span>
+              <span>Biology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <img src="Photo/teacher3.jpg" alt="Habibur Rahman">
+          <div class="teacher-info">
+            <h2>Habibur Rahman</h2>
+            <p><strong>University:</strong> Tejgaon</p>
+            <p><strong>Department:</strong> Biochemistry</p>
+            <div class="teacher-subject">
+              <span>English</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <img src="Photo/teacher4.jpg" alt="Jahid Hasan">
+          <div class="teacher-info">
+            <h2>Jahid Hasan</h2>
+            <p><strong>University:</strong> CVC</p>
+            <p><strong>Department:</strong> Mathematics</p>
+            <div class="teacher-subject">
+              <span>Math</span>
+              <span>ICT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <img src="Photo/teacher5.jpg" alt="Nahid Hasan">
+          <div class="teacher-info">
+            <h2>Nahid Hasan</h2>
+            <p><strong>University:</strong> CVC</p>
+            <p><strong>Department:</strong> English</p>
+            <div class="teacher-subject">
+              <span>English</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  `
+},
   previous: {
     title: "Previous Tournaments",
     content: `
@@ -246,142 +317,84 @@ home: {
 registration: {
   title: "Player Registration",
   content: `
-    <div class="registration-page">
-
-      <div class="registration-banner">
-        <div>
-          <span class="reg-eyebrow">ADOMMO TOURNAMENT 2026</span>
-          <h1>Join The Battle!</h1>
-          <p>Show your skills. Represent your team. Make history.</p>
-        </div>
-        <div class="reg-trophy">🏆</div>
+    <div class="registration-banner">
+      <div>
+        <span class="reg-eyebrow">ADOMMO TOURNAMENT 2026</span>
+        <h1>Join The Battle!</h1>
+        <p>Show your skills. Represent your team. Make history.</p>
       </div>
+      <div class="reg-trophy">🏆</div>
+    </div>
 
-      <div class="registration-layout">
+    <div class="registration-layout">
 
-        <div class="registration-form-card">
-          <div class="reg-heading">
-            <div class="reg-heading-icon">📝</div>
-            <div>
-              <h2>Player Registration</h2>
-              <p>Fill in your details below to register.</p>
-            </div>
+      <div class="registration-form-card">
+        <div class="reg-heading">
+          <div class="reg-heading-icon">📝</div>
+          <div>
+            <h2>Player Registration</h2>
+            <p>Ready to become a part of Adommo Tournament 2026?</p>
           </div>
-
-          <div class="reg-divider"></div>
-
-          <form id="player-registration-form">
-
-            <div class="reg-form-grid">
-
-              <div class="reg-field">
-                <label for="player-name">Full Name <span>*</span></label>
-                <input id="player-name" name="playerName"
-                  type="text" placeholder="Enter your full name"
-                  maxlength="80" required>
-              </div>
-
-              <div class="reg-field">
-                <label for="player-phone">Phone Number <span>*</span></label>
-                <input id="player-phone" name="phone"
-                  type="tel" placeholder="Enter phone number"
-                  maxlength="20" required>
-              </div>
-
-              <div class="reg-field">
-                <label for="player-class">Class / Batch <span>*</span></label>
-                <input id="player-class" name="classBatch"
-                  type="text" placeholder="Enter class or batch"
-                  maxlength="40" required>
-              </div>
-
-              <div class="reg-field">
-                <label for="jersey-number">Jersey Number</label>
-                <input id="jersey-number" name="jerseyNumber"
-                  type="number" min="0" max="999"
-                  placeholder="e.g. 10">
-              </div>
-
-              <div class="reg-field">
-                <label for="player-position">Playing Position <span>*</span></label>
-                <select id="player-position" name="position" required>
-                  <option value="">Select position</option>
-                  <option value="Goalkeeper">Goalkeeper</option>
-                  <option value="Defender">Defender</option>
-                  <option value="Midfielder">Midfielder</option>
-                  <option value="Forward">Forward</option>
-                  <option value="Any">Any Position</option>
-                </select>
-              </div>
-
-              <div class="reg-field">
-                <label for="player-team">Preferred Team / Batch</label>
-                <input id="player-team" name="team"
-                  type="text" placeholder="Enter team or batch"
-                  maxlength="50">
-              </div>
-
-            </div>
-
-            <label class="reg-consent">
-              <input type="checkbox" id="player-confirm" required>
-              <span>I confirm that the information provided is correct.</span>
-            </label>
-
-            <button type="submit" class="reg-submit">
-              <span>Submit Registration</span>
-              <span>→</span>
-            </button>
-
-            <p id="registration-message" role="status"
-              aria-live="polite"></p>
-
-            <p class="reg-note">
-              Your registration will be recorded after the database is connected.
-            </p>
-
-          </form>
         </div>
 
-        <aside class="registration-info">
-          <div class="reg-info-icon">⚽</div>
-          <span class="reg-eyebrow">READY TO PLAY?</span>
-          <h2>Your Journey Starts Here.</h2>
-          <p>Complete the registration form with accurate information.</p>
+        <div class="reg-divider"></div>
 
-          <div class="reg-benefit">
-            <span>✓</span>
-            <div>
-              <b>Easy Registration</b>
-              <small>Enter your player details</small>
-            </div>
-          </div>
+        <div style="text-align:center;padding:25px 10px;">
+          <div style="font-size:65px;margin-bottom:15px;">⚽</div>
 
-          <div class="reg-benefit">
-            <span>✓</span>
-            <div>
-              <b>Represent Your Team</b>
-              <small>Enter your team or batch</small>
-            </div>
-          </div>
+          <h2 style="color:#123c75;margin-bottom:12px;">
+            Register Yourself Now!
+          </h2>
 
-          <div class="reg-benefit">
-            <span>✓</span>
-            <div>
-              <b>Play With Pride</b>
-              <small>Be part of Adommo 2026</small>
-            </div>
-          </div>
+          <p style="color:#64748b;font-size:13px;line-height:1.8;margin-bottom:25px;">
+            Click the button below and complete your player registration
+            through our official Google Form.
+          </p>
 
-          <div class="reg-info-footer">
-            ADOMMO TOURNAMENT<br>2026
-          </div>
-        </aside>
-
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScKf-cLKyRaLR395Cw4HfFnre_hY_WK5773nkUfif-8J2GgZg/viewform"
+   target="_blank"
+   rel="noopener noreferrer">
+   REGISTER NOW ↗
+</a>
+     <p style="margin-top:18px;color:#94a3b8;font-size:11px;">
+            Official Adommo Tournament 2026 Registration
+          </p>
+        </div>
       </div>
+
+      <aside class="registration-info">
+        <div class="reg-info-icon">🏆</div>
+        <span class="reg-eyebrow">READY TO PLAY?</span>
+        <h2>Your Journey Starts Here.</h2>
+        <p>Become a part of the ultimate Adommo Tournament experience.</p>
+
+        <div class="reg-benefit">
+          <span>✓</span>
+          <div>
+            <div class="reg-benefit">
+          <span>✓</span>
+          <div>
+            <b>Represent Your Team</b>
+            <small>Show your skills and team spirit.</small>
+          </div>
+        </div>
+
+        <div class="reg-benefit">
+          <span>✓</span>
+          <div>
+            <b>Play With Pride</b>
+            <small>Be part of Adommo 2026.</small>
+          </div>
+        </div>
+
+        <div class="reg-info-footer">
+          ADOMMO TOURNAMENT<br>2026
+        </div>
+      </aside>
+
     </div>
   `
-}
+},
 };
 
 menuLinks.forEach(link => {
