@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Registration | Adommo Tournament</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      background: #f3f8ff;
+      color: #12345b;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+    }
+
+    .registration-page {
+      width: min(92%, 520px);
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border: 1px solid #d7e8ff;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px #0756b91a;
+    }
+
+    .registration-page h1 {
+      color: #0756b9;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .registration-page p {
+      text-align: center;
+      color: #52708f;
+      margin: 10px 0 25px;
+    }
+
+    .registration-page label {
+      display: block;
+      margin: 16px 0 7px;
+      font-weight: 800;
+      color: #174c88;
+    }
+
+    .registration-page input,
+    .registration-page select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #bfd7f5;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 15px;
+    }
+
+    .registration-page button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 15px;
+      border: 0;
+      border-radius: 8px;
+      background: #0756b9;
+      color: white;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #0756b9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="registration-page">
+    <h1>PLAYER REGISTRATION</h1>
+    <p>Adommo Tournament 2026</p>
+
+    <form id="playerForm">
+      <label for="playerName">Player Name</label>
+      <input id="playerName" name="playerName"
+             type="text" required>
+
+      <label for="phone">Contact Number</label>
+      <input id="phone" name="phone"
+             type="tel" required>
+
+      <label for="position">Playing Position</label>
+      <select id="position" name="position" required>
+        <option value="">Choose position</option>
+        <option>Goalkeeper</option>
+        <option>Defender</option>
+        <option>Midfielder</option>
+        <option>Forward</option>
+      </select>
+
+      <label for="jersey">Jersey Number</label>
+      <input id="jersey" name="jersey"
+             type="number" min="1" max="99" required>
+
+      <label for="team">Team / Batch</label>
+      <input id="team" name="team" type="text" required>
+
+      <button type="submit">SUBMIT REGISTRATION</button>
+    </form>
+
+    <a class="back-link" href="index.html">
+      ← Back to Home
+    </a>
+  </main>
+
+  <script>
+    document.getElementById("playerForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form design ready! Online submission is not connected yet.");
+      });
+  </script>
+</body>
+</html>
