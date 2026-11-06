@@ -225,7 +225,7 @@ home: {
         </div>
 
         <div class="teacher-card">
-          <img src="teacher2.png" alt="Rabiul Islam Pulock">
+          <img src="teacher2.jpg" alt="Rabiul Islam Pulock">
           <div class="teacher-info">
             <h2>Rabiul Islam Pulock</h2>
             <p><strong>University:</strong> CU</p>
@@ -238,7 +238,7 @@ home: {
         </div>
 
         <div class="teacher-card">
-          <img src="teacher3.png" alt="Habibur Rahman">
+          <img src="teacher3.jpg" alt="Habibur Rahman">
           <div class="teacher-info">
             <h2>Habibur Rahman</h2>
             <p><strong>University:</strong> Tejgaon</p>
@@ -250,7 +250,7 @@ home: {
         </div>
 
         <div class="teacher-card">
-          <img src="teacher4.png" alt="Jahid Hasan">
+          <img src="teacher4.jpg" alt="Jahid Hasan">
           <div class="teacher-info">
             <h2>Jahid Hasan</h2>
             <p><strong>University:</strong> CVC</p>
@@ -263,7 +263,7 @@ home: {
         </div>
 
         <div class="teacher-card">
-          <img src="teacher5.png" alt="Nahid Hasan">
+          <img src="teacher5.jpg" alt="Nahid Hasan">
           <div class="teacher-info">
             <h2>Nahid Hasan</h2>
             <p><strong>University:</strong> CVC</p>
